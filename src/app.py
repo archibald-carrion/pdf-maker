@@ -2,7 +2,6 @@ import tkinter
 import tkinter.messagebox
 import customtkinter
 import os
-import eightPuzzleSolver
 # import time
 # import psutil
 # import matrices
@@ -18,7 +17,7 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         # configure window
-        self.title("8 Puzzle Solver")
+        self.title("PDF maker")
         self.geometry(f"{1480}x{720}")
 
         # configure grid layout (4x4) and others general configurations

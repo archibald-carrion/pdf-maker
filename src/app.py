@@ -29,6 +29,9 @@ class App(customtkinter.CTk):
         # self.init_left_sidebar()
 
 
+    def change_scaling_event(self, new_scaling: str):
+        new_scaling_float = int(new_scaling.replace("%", "")) / 100
+        customtkinter.set_widget_scaling(new_scaling_float)
 
     def quit_simulation_event(self):
         self.destroy()

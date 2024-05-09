@@ -24,3 +24,12 @@ class App(customtkinter.CTk):
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure(0, weight=1)
+
+        # left side bar section
+        # self.init_left_sidebar()
+
+
+
+    def quit_simulation_event(self):
+        self.destroy()
+        exit()
